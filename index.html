@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis XV Ashley</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f8e6ee;
+    overflow: hidden;
+}
+
+/* CONTENEDOR */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    margin: auto;
+}
+
+/* IMAGEN SOBRE */
+.container img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+/* ZOOM SUAVE */
+.sobre {
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.sobre.zoom {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+/* ESTRELLAS ROSADAS */
+.estrella {
+    position: fixed;
+    color: #f7c6d9;
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff;
+    animation: explosion 1s ease-out forwards;
+    z-index: 999;
+    pointer-events: none;
+}
+
+@keyframes explosion {
+    0% {
+        opacity: 1;
+        transform: scale(0.3);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y)) scale(2);
+    }
+}
+
+/* BOTÓN PLAY MÚSICA */
+.play {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: Georgia;
+    color: #a05a7b;
+    font-size: 14px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <img src="sobre.png" id="sobre" class="sobre" onclick="abrirInvitacion()">
+    
+    <div class="play" onclick="activarMusica(event)">
+        🎵 Activar música
+    </div>
+</div>
+
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function crearEstrellas() {
+    for (let i = 0; i < 25; i++) {
+        const estrella = document.createElement("div");
+        estrella.className = "estrella";
+        estrella.innerHTML = "✦";
+
+        const x = (Math.random() * 300 - 150) + "px";
+        const y = (Math.random() * 300 - 150) + "px";
+
+        estrella.style.left = "50%";
+        estrella.style.top = "60%";
+        estrella.style.setProperty("--x", x);
+        estrella.style.setProperty("--y", y);
+
+        document.body.appendChild(estrella);
+
+        setTimeout(() => estrella.remove(), 1000);
+    }
+}
+
+function activarMusica(e) {
+    e.stopPropagation();
+    const audio = document.getElementById("musica");
+    audio.play().catch(() => {});
+}
+
+function abrirInvitacion() {
+    const sobre = document.getElementById("sobre");
+
+    const audio = document.getElementById("musica");
+    audio.play().catch(() => {});
+
+    sobre.classList.add("zoom");
+    crearEstrellas();
+
+    setTimeout(() => {
+        window.location.href = "invitacion.html";
+    }, 900);
+}
+</script>
+
+</body>
+</html>
