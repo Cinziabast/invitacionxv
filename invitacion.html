@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis XV Ashley</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f8e6ee;
+    font-family: Georgia, serif;
+}
+
+/* CONTENEDOR */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* FONDO */
+.container img {
+    width: 100%;
+    display: block;
+}
+
+/* TEXTO PRINCIPAL */
+.texto {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    color: #a05a7b;
+}
+
+.texto h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.texto p {
+    font-size: 14px;
+}
+
+/* CONTADOR */
+.contador {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.contador div {
+    background: rgba(255,255,255,0.7);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.contador span {
+    font-size: 18px;
+    color: #a05a7b;
+    font-weight: bold;
+}
+
+/* BOTONES INVISIBLES */
+.boton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: 50px;
+    background: transparent;
+    z-index: 10;
+}
+
+/* AJUSTAR POSICIÓN SEGÚN TU IMAGEN */
+.boton1 { top: 60%; }
+.boton2 { top: 70%; }
+.boton3 { top: 82%; }
+
+/* POPUP */
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+}
+
+.popup input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.popup button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.si { background: #d88aa8; color: white; }
+.no { background: #aaa; color: white; }
+
+/* QR */
+.qr {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="invitacion.png">
+
+    <!-- TEXTO -->
+    <div class="texto">
+        <h1>Mis XV Ashley</h1>
+        <p>Sábado 11 de julio 2026</p>
+    </div>
+
+    <!-- CONTADOR -->
+    <div class="contador">
+        <div><span id="dias">00</span><br>días</div>
+        <div><span id="horas">00</span><br>h</div>
+        <div><span id="minutos">00</span><br>m</div>
+        <div><span id="segundos">00</span><br>s</div>
+    </div>
+
+    <!-- BOTONES -->
+    <a class="boton boton1" href="#" target="_blank"></a>
+    <a class="boton boton2" href="#" target="_blank"></a>
+    <a class="boton boton3" href="javascript:abrirPopup()"></a>
+
+</div>
+
+<!-- MÚSICA -->
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<!-- POPUP -->
+<div class="popup-bg" id="popup">
+    <div class="popup">
+        <h3>Confirmar asistencia</h3>
+
+        <input type="text" id="nombre" placeholder="Tu nombre completo">
+
+        <button class="si" onclick="confirmar('si')">Sí asistiré 💖</button>
+        <button class="no" onclick="confirmar('no')">No podré asistir</button>
+    </div>
+</div>
+
+<!-- QR -->
+<div class="qr" id="qr">
+    <p>📸 Comparte tus fotos aquí:</p>
+    <img src="qr.png" width="150">
+</div>
+
+<script>
+/* CONTADOR */
+const fechaEvento = new Date("2026-07-11T20:00:00").getTime();
+
+setInterval(() => {
+    const ahora = new Date().getTime();
+    const diferencia = fechaEvento - ahora;
+
+    document.getElementById("dias").innerText = Math.floor(diferencia / (1000*60*60*24));
+    document.getElementById("horas").innerText = Math.floor((diferencia / (1000*60*60)) % 24);
+    document.getElementById("minutos").innerText = Math.floor((diferencia / (1000*60)) % 60);
+    document.getElementById("segundos").innerText = Math.floor((diferencia / 1000) % 60);
+}, 1000);
+
+/* MÚSICA */
+const audio = document.getElementById("musica");
+document.addEventListener("click", () => {
+    audio.play().catch(()=>{});
+}, { once: true });
+
+/* POPUP */
+function abrirPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function confirmar(respuesta) {
+    const nombre = document.getElementById("nombre").value;
+
+    if(!nombre){
+        alert("Por favor escribe tu nombre");
+        return;
+    }
+
+    document.getElementById("popup").style.display = "none";
+
+    if(respuesta === "si"){
+        document.getElementById("qr").style.display = "block";
+    }
+
+    alert("Gracias por confirmar 💖");
+}
+</script>
+
+</body>
+</html>
