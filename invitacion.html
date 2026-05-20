@@ -6,14 +6,12 @@
 <title>Invitación Ashley XV</title>
 
 <style>
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
     background: #f6dce8;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
     color: #5b3d3d;
 }
 
@@ -22,91 +20,69 @@ body {
     max-width: 520px;
     margin: auto;
     min-height: 100vh;
-    padding: 60px 28px 50px;
-    position: relative;
-    overflow: hidden;
+    padding: 45px 26px 50px;
     background-image: url("fondo-xv.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    border-left: 6px solid #f2abc8;
-    border-right: 6px solid #f2abc8;
-}
-
-.content {
-    position: relative;
-    z-index: 2;
     text-align: center;
 }
 
-.crown {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.mis-xv {
-    font-size: 64px;
-    letter-spacing: 8px;
-    color: #9b5f5a;
-    margin: 0 0 12px;
-    font-weight: bold;
-}
-
-.ashley {
+.logo-img {
     display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 62px;
-    line-height: 1;
-    color: #8b5a52;
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-    font-weight: normal;
-    margin: 18px auto;
+    margin: 0 auto;
+}
+
+.corona {
+    width: 170px;
+    margin-bottom: 24px;
 }
 
 .text-small {
     font-size: 16px;
     line-height: 1.55;
-    max-width: 380px;
     margin: 14px auto;
+    max-width: 380px;
 }
 
-.parents {
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-    font-size: 34px;
-    line-height: 1.1;
-    color: #8b5a52;
-    margin: 28px 0 12px;
+.jose {
+    width: 82%;
+    max-width: 360px;
+    margin: 24px auto 12px;
 }
 
 .invite-text {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.6;
-    margin: 14px auto;
+    margin: 12px auto;
 }
 
-.xv-word {
-    font-size: 76px;
-    color: #b44773;
-    font-weight: bold;
-    display: block;
-    margin: 8px 0;
+.xv {
+    width: 38%;
+    max-width: 170px;
+    margin: 12px auto;
+}
+
+.ashley {
+    width: 96%;
+    max-width: 430px;
+    margin: 14px auto 20px;
 }
 
 .quince-img {
-    width: 90%;
-    max-width: 370px;
+    width: 92%;
+    max-width: 390px;
+    margin: 18px auto 10px;
     display: block;
-    margin: 26px auto 12px;
     filter: drop-shadow(0 12px 16px rgba(136,73,95,0.28));
 }
 
 .card {
-    background: rgba(255,255,255,0.58);
+    background: rgba(255,255,255,0.62);
     border: 1.5px solid #d8a24a;
     border-radius: 22px;
     padding: 18px;
-    margin: 26px 0;
+    margin: 24px 0;
     backdrop-filter: blur(5px);
 }
 
@@ -127,38 +103,24 @@ body {
     border: 1.3px solid #d8a24a;
     border-radius: 14px;
     padding: 10px 3px;
-    background: rgba(255,255,255,0.55);
+    background: rgba(255,255,255,0.58);
 }
 
 .time-box span {
     display: block;
     color: #b44773;
-    font-size: 28px;
+    font-size: 27px;
     font-weight: bold;
 }
 
 .time-box small {
     font-size: 10px;
-    letter-spacing: 1px;
 }
 
-.date-box {
-    border: 1.5px solid #d8a24a;
-    border-radius: 18px;
-    padding: 16px 8px;
-    margin-bottom: 16px;
-    background: rgba(255,255,255,0.45);
-}
-
-.date-box .day {
-    font-size: 64px;
-    color: #b44773;
-}
-
-.date-box .month {
-    font-size: 34px;
-    color: #b44773;
-    font-family: "Brush Script MT", "Segoe Script", cursive;
+.fecha {
+    width: 100%;
+    max-width: 430px;
+    margin: 4px auto 12px;
 }
 
 .info {
@@ -169,7 +131,7 @@ body {
 .btn {
     display: inline-block;
     padding: 13px 28px;
-    margin-top: 12px;
+    margin-top: 14px;
     background: #b44773;
     color: white;
     border: 2px solid #d8a24a;
@@ -240,20 +202,20 @@ body {
 }
 
 .envelope-img {
-    width: 75%;
-    max-width: 300px;
+    width: 76%;
+    max-width: 310px;
     display: block;
-    margin: 12px auto 8px;
-    filter: drop-shadow(0 8px 12px rgba(120,70,70,0.2));
+    margin: 14px auto 8px;
 }
 
 .footer {
     color: #b44773;
-    font-size: 34px;
+    font-size: 32px;
     font-family: "Brush Script MT", "Segoe Script", cursive;
-    margin: 30px 0 8px;
+    margin: 28px 0 8px;
 }
 
+/* POPUP */
 .popup-bg {
     position: fixed;
     inset: 0;
@@ -266,7 +228,7 @@ body {
 
 .popup {
     width: 86%;
-    max-width: 340px;
+    max-width: 350px;
     background: linear-gradient(180deg, #fff2f8, #ffd3e5);
     border: 2px solid #d8a24a;
     border-radius: 24px;
@@ -300,58 +262,26 @@ body {
     cursor: pointer;
 }
 
-.si {
-    background: #b44773;
-    color: white;
-}
+.si { background: #b44773; color: white; }
+.no { background: #9b8b8b; color: white; }
+.cerrar { background: transparent; color: #8b4d61; }
 
-.no {
-    background: #9b8b8b;
-    color: white;
-}
-
-.cerrar {
-    background: transparent;
-    color: #8b4d61;
-}
-
-.qr-box {
+.qr-popup {
     display: none;
-    margin-top: 16px;
-    padding: 16px;
-    border-radius: 18px;
-    background: rgba(255,255,255,0.55);
 }
 
-.qr-box img {
-    width: 150px;
-    max-width: 80%;
+.qr-popup img {
+    width: 170px;
+    max-width: 85%;
+    margin: 12px auto;
 }
 
 @media (max-width: 420px) {
-    .page {
-        padding: 48px 20px 44px;
-    }
-
-    .mis-xv {
-        font-size: 52px;
-    }
-
-    .ashley {
-        font-size: 50px;
-    }
-
-    .parents {
-        font-size: 30px;
-    }
-
-    .xv-word {
-        font-size: 64px;
-    }
-
-    .quince-img {
-        width: 96%;
-    }
+    .page { padding: 38px 20px 44px; }
+    .corona { width: 145px; }
+    .jose { width: 92%; }
+    .ashley { width: 100%; }
+    .xv { width: 42%; }
 }
 </style>
 </head>
@@ -359,13 +289,8 @@ body {
 <body>
 
 <div class="page">
-<div class="content">
 
-    <div class="crown">👑</div>
-
-    <h1 class="mis-xv">MIS XV</h1>
-
-    <div class="ashley">Ashley Alessandra</div>
+    <img src="corona.png" class="logo-img corona" alt="Corona">
 
     <p class="text-small">
         Hoy comienza una nueva etapa en mi vida,<br>
@@ -377,21 +302,21 @@ body {
         celebro este momento tan especial.
     </p>
 
-    <div class="parents">
-        Jose Geovanny<br>
-        &<br>
-        Cinzia
-    </div>
+    <img src="jose.png" class="logo-img jose" alt="Jose Geovanny y Cinzia">
 
     <div class="invite-text">
         nos complace invitarte a los
-        <span class="xv-word">XV</span>
+    </div>
+
+    <img src="xv.png" class="logo-img xv" alt="XV">
+
+    <div class="invite-text">
         de nuestra querida hija
     </div>
 
-    <div class="ashley">Ashley Alessandra</div>
+    <img src="ashley_alessandra.png" class="logo-img ashley" alt="Ashley Alessandra">
 
-    <img src="quinceanera.png" class="quince-img" alt="Quinceañera con vestido rosa">
+    <img src="quinceanera.png" class="quince-img" alt="Quinceañera">
 
     <section class="card">
         <div class="card-title">FALTAN</div>
@@ -404,29 +329,17 @@ body {
     </section>
 
     <section class="card">
-        <div class="date-box">
-            <div>SÁBADO</div>
-            <div class="day">11</div>
-            <div class="month">Julio</div>
-            <div>2026</div>
-        </div>
+        <img src="fecha.png" class="fecha" alt="Fecha del evento">
 
         <div class="info">
             <strong>📍 RECEPCIÓN</strong><br>
-            Cristal House<br>
+            Salón de Eventos Cristal House<br>
             Cra 12 #10-59, Jamundí<br><br>
 
-            <strong>⏰ HORA</strong><br>
-            8:00 p.m.
+            <a class="btn" target="_blank" href="https://www.google.com/maps/place/Salon+De+Eventos+Cristal+House/@3.2627598,-76.5443054,17z/data=!3m1!4b1!4m6!3m5!1s0x8e309eb6b83aa355:0xa90e75752b8b81eb!8m2!3d3.2627598!4d-76.5417305!16s%2Fg%2F11gbnt1l58?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">
+                📍 VER UBICACIÓN
+            </a>
         </div>
-    </section>
-
-    <section class="card">
-        <div class="card-title">UBICACIÓN</div>
-        <p>Salón de Eventos Cristal House</p>
-        <a class="btn" target="_blank" href="https://www.google.com/maps/place/Salon+De+Eventos+Cristal+House/@3.2627598,-76.5443054,17z/data=!3m1!4b1!4m6!3m5!1s0x8e309eb6b83aa355:0xa90e75752b8b81eb!8m2!3d3.2627598!4d-76.5417305!16s%2Fg%2F11gbnt1l58?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">
-            📍 VER UBICACIÓN
-        </a>
     </section>
 
     <section class="card notice">
@@ -452,11 +365,6 @@ body {
     <section class="card">
         <div class="card-title">CONFIRMA TU ASISTENCIA</div>
         <button class="btn" onclick="abrirPopup()">💌 CONFIRMAR AQUÍ</button>
-
-        <div class="qr-box" id="qrBox">
-            <p>Gracias por confirmar 💖<br>Comparte tus fotos y vídeos aquí:</p>
-            <img src="qr.png" alt="QR para fotos y vídeos">
-        </div>
     </section>
 
     <section class="card">
@@ -467,12 +375,12 @@ body {
     <div class="footer">¡Te esperamos!</div>
 
 </div>
-</div>
 
 <audio id="musica" loop>
     <source src="musica.mp3" type="audio/mpeg">
 </audio>
 
+<!-- POPUP CONFIRMAR -->
 <div class="popup-bg" id="popup">
     <div class="popup">
         <h2>Confirmar asistencia</h2>
@@ -483,6 +391,23 @@ body {
         <button class="si" onclick="confirmar('si')">Sí asistiré 💖</button>
         <button class="no" onclick="confirmar('no')">No podré asistir</button>
         <button class="cerrar" onclick="cerrarPopup()">Cerrar</button>
+    </div>
+</div>
+
+<!-- POPUP QR SOLO SI CONFIRMAN SÍ -->
+<div class="popup-bg" id="popupQR">
+    <div class="popup qr-popup">
+        <h2>¡Gracias por confirmar! 💖</h2>
+        <p>
+            Te esperamos con mucha ilusión en los XV de Ashley Alessandra.
+        </p>
+        <p>
+            Este código QR es para que el día del evento puedas subir las fotos y vídeos que hagas durante la celebración.
+        </p>
+
+        <img src="qr.png" alt="QR para subir fotos y vídeos">
+
+        <button class="si" onclick="cerrarPopupQR()">Cerrar</button>
     </div>
 </div>
 
@@ -557,6 +482,14 @@ function cerrarPopup() {
     document.getElementById("popup").style.display = "none";
 }
 
+function abrirPopupQR() {
+    document.getElementById("popupQR").style.display = "flex";
+}
+
+function cerrarPopupQR() {
+    document.getElementById("popupQR").style.display = "none";
+}
+
 function confirmar(respuesta) {
     const nombre = document.getElementById("nombre").value.trim();
     const mensaje = document.getElementById("mensaje").value.trim();
@@ -569,8 +502,7 @@ function confirmar(respuesta) {
     cerrarPopup();
 
     if (respuesta === "si") {
-        document.getElementById("qrBox").style.display = "block";
-        alert("Gracias por confirmar tu asistencia, " + nombre + " 💖");
+        abrirPopupQR();
     } else {
         alert("Gracias por responder, " + nombre + " 💌");
     }
