@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mis XV Ashley</title>
+<title>Invitación Ashley XV</title>
 
 <style>
 * {
@@ -12,162 +12,125 @@
 
 body {
     margin: 0;
-    background: #f7dbe8;
+    background: #f6dce8;
     font-family: Georgia, serif;
-    color: #5b3f3f;
+    color: #5b3d3d;
 }
 
 .page {
+    width: 100%;
     max-width: 520px;
     margin: auto;
     min-height: 100vh;
-    padding: 28px 18px;
-    background:
-        radial-gradient(circle at top, rgba(255,255,255,0.65), transparent 35%),
-        linear-gradient(180deg, #ffd6e7, #ffeaf2 45%, #f8c9dd);
-    border-left: 8px solid #f3b4cc;
-    border-right: 8px solid #f3b4cc;
+    padding: 34px 20px 46px;
     position: relative;
     overflow: hidden;
-}
-
-.page::before,
-.page::after {
-    content: "🌹 ✨ 🌸 ✨ 🌹";
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    color: #c9943f;
-    font-size: 22px;
-    opacity: 0.55;
-    left: 0;
+    background:
+        radial-gradient(circle at top center, rgba(255,255,255,0.9), transparent 30%),
+        linear-gradient(180deg, rgba(255,225,238,0.95), rgba(255,198,221,0.9)),
+        url("fondo-rosa.png");
+    background-size: cover;
+    background-position: top center;
+    border-left: 6px solid #f2abc8;
+    border-right: 6px solid #f2abc8;
 }
 
 .page::before {
-    top: 8px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(255,255,255,0.5), transparent 12%),
+        radial-gradient(circle at 90% 15%, rgba(255,255,255,0.35), transparent 15%),
+        radial-gradient(circle at 50% 60%, rgba(255,255,255,0.35), transparent 22%);
+    pointer-events: none;
 }
 
-.page::after {
-    bottom: 8px;
+.content {
+    position: relative;
+    z-index: 2;
 }
 
 .header {
     text-align: center;
-    padding-top: 28px;
+    padding-top: 10px;
 }
 
 .crown {
-    font-size: 34px;
-    color: #c9943f;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
 
-h1 {
-    margin: 8px 0 0;
-    font-size: 42px;
-    letter-spacing: 4px;
-    color: #ad4771;
+.mis-xv {
+    font-size: 52px;
+    letter-spacing: 8px;
+    color: #9b5f5a;
+    margin: 0;
+    font-weight: bold;
 }
 
-.name {
-    font-size: 48px;
-    line-height: 1;
-    color: #a33d68;
+.ashley {
+    font-size: 58px;
+    line-height: 0.95;
+    color: #8b5a52;
     font-style: italic;
-    margin: 18px 0;
+    font-weight: normal;
+    margin: 14px 0 18px;
 }
 
-.quote {
-    font-size: 16px;
-    line-height: 1.5;
+.text-small {
+    font-size: 15px;
+    line-height: 1.55;
+    text-align: center;
+    max-width: 370px;
+    margin: 0 auto 14px;
+}
+
+.parents {
+    font-size: 38px;
+    line-height: 1.15;
+    color: #8b5a52;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.invite-text {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
     margin: 12px auto;
-    max-width: 380px;
 }
 
-.verse {
-    color: #bd5d83;
-    margin-top: 8px;
-    font-size: 18px;
+.xv-word {
+    font-size: 44px;
+    font-style: italic;
+    color: #8b5a52;
 }
 
-.girl {
-    width: 230px;
-    height: 390px;
-    margin: 20px auto 0;
-    position: relative;
+.quince-img {
+    width: 78%;
+    max-width: 360px;
+    display: block;
+    margin: 20px auto 10px;
+    filter: drop-shadow(0 12px 14px rgba(136, 73, 95, 0.25));
 }
 
-.hair {
-    position: absolute;
-    top: 15px;
-    left: 75px;
-    width: 80px;
-    height: 145px;
-    background: #5b2d22;
-    border-radius: 50% 50% 45% 45%;
-    box-shadow: 0 20px 0 #4a241d;
-}
-
-.head {
-    position: absolute;
-    top: 30px;
-    left: 91px;
-    width: 48px;
-    height: 55px;
-    background: #f5c7ad;
-    border-radius: 50%;
-}
-
-.body {
-    position: absolute;
-    top: 90px;
-    left: 83px;
-    width: 64px;
-    height: 75px;
-    background: #f5a7c7;
-    border-radius: 28px 28px 12px 12px;
-}
-
-.skirt {
-    position: absolute;
-    top: 145px;
-    left: 10px;
-    width: 210px;
-    height: 230px;
-    background: radial-gradient(circle at top, #fff1f7, #ef7fb0 55%, #d94f89);
-    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    border-radius: 0 0 40px 40px;
-    filter: drop-shadow(0 8px 12px rgba(150,60,90,0.25));
-}
-
-.bow {
-    position: absolute;
-    top: 155px;
-    left: 78px;
-    font-size: 48px;
-}
-
-.flowers {
-    position: absolute;
-    top: 16px;
-    left: 77px;
-    font-size: 20px;
-}
-
-.section {
-    background: rgba(255,255,255,0.48);
-    border: 1.5px solid #d7a04c;
+.card {
+    background: rgba(255,255,255,0.55);
+    border: 1.5px solid #d8a24a;
     border-radius: 22px;
     padding: 18px;
-    margin: 22px 0;
+    margin: 24px 0;
     text-align: center;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
 }
 
-.section-title {
-    color: #ad4771;
-    letter-spacing: 4px;
+.card-title {
+    color: #b44773;
+    letter-spacing: 5px;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .countdown {
@@ -177,94 +140,101 @@ h1 {
 }
 
 .time-box {
-    border: 1px solid #d7a04c;
+    border: 1.3px solid #d8a24a;
     border-radius: 14px;
-    padding: 10px 4px;
+    padding: 10px 3px;
     background: rgba(255,255,255,0.5);
 }
 
 .time-box span {
     display: block;
-    font-size: 30px;
-    color: #ad4771;
+    color: #b44773;
+    font-size: 29px;
     font-weight: bold;
 }
 
 .time-box small {
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 1px;
 }
 
-.date-box {
+.event-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
     align-items: center;
 }
 
-.big-date {
-    border: 1.5px solid #d7a04c;
+.date-box {
+    border: 1.5px solid #d8a24a;
     border-radius: 18px;
-    padding: 14px;
+    padding: 14px 8px;
 }
 
-.big-date .day {
-    font-size: 60px;
-    color: #ad4771;
+.date-box .day {
+    font-size: 64px;
+    color: #b44773;
 }
 
-.big-date .month {
+.date-box .month {
     font-size: 34px;
-    color: #ad4771;
+    color: #b44773;
     font-style: italic;
 }
 
 .info {
     text-align: left;
-    font-size: 16px;
-    line-height: 1.45;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 28px;
+    color: #b44773;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 14px;
     padding: 13px 26px;
+    margin-top: 12px;
     background: #b44773;
     color: white;
-    text-decoration: none;
+    border: 2px solid #d8a24a;
     border-radius: 30px;
-    border: 2px solid #d7a04c;
+    text-decoration: none;
     letter-spacing: 1px;
+    font-family: Georgia, serif;
     cursor: pointer;
 }
 
 .notice {
     font-weight: bold;
     color: #a33d68;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .player {
-    margin: 24px 0;
     padding: 18px;
     border-radius: 22px;
-    background: rgba(255,255,255,0.55);
-    border: 1.5px solid #d7a04c;
+    background: rgba(255,255,255,0.62);
+    border: 1.5px solid #d8a24a;
     text-align: center;
+    margin: 24px 0;
 }
 
 .progress {
     height: 4px;
-    background: #d88aa8;
+    background: #e7a2bd;
     border-radius: 10px;
-    margin-bottom: 18px;
     overflow: hidden;
+    margin-bottom: 18px;
 }
 
 .progress-fill {
-    width: 0%;
     height: 100%;
-    background: #ad4771;
+    width: 0%;
+    background: #b44773;
 }
 
 .controls {
@@ -276,22 +246,41 @@ h1 {
 .controls button {
     border: none;
     background: transparent;
-    font-size: 25px;
-    color: #ad4771;
+    color: #b44773;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .play-btn {
     width: 62px;
     height: 62px;
-    border-radius: 50% !important;
+    border-radius: 50%;
     background: #b44773 !important;
     color: white !important;
-    border: 2px solid #d7a04c !important;
+    border: 2px solid #d8a24a !important;
+    font-size: 27px !important;
 }
 
 .player-text {
-    color: #ad4771;
     margin-top: 12px;
+    color: #b44773;
+    font-size: 15px;
+}
+
+.envelope-img {
+    width: 72%;
+    max-width: 300px;
+    display: block;
+    margin: 12px auto 8px;
+    filter: drop-shadow(0 8px 12px rgba(120,70,70,0.2));
+}
+
+.footer {
+    text-align: center;
+    color: #b44773;
+    font-size: 31px;
+    font-style: italic;
+    margin: 28px 0 8px;
 }
 
 .popup-bg {
@@ -299,39 +288,45 @@ h1 {
     inset: 0;
     background: rgba(0,0,0,0.58);
     display: none;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: 999;
 }
 
 .popup {
     width: 86%;
     max-width: 340px;
-    background: linear-gradient(180deg, #fff3f8, #ffd7e7);
-    border: 2px solid #d7a04c;
+    background: linear-gradient(180deg, #fff2f8, #ffd3e5);
+    border: 2px solid #d8a24a;
     border-radius: 24px;
     padding: 22px;
     text-align: center;
     box-shadow: 0 0 30px rgba(255,190,220,0.7);
 }
 
+.popup h2 {
+    color: #b44773;
+    margin-top: 0;
+}
+
 .popup input,
 .popup textarea {
     width: 100%;
-    margin: 8px 0;
     padding: 12px;
+    border: 1px solid #d8a24a;
     border-radius: 14px;
-    border: 1px solid #d7a04c;
+    margin: 8px 0;
     font-family: Georgia, serif;
 }
 
 .popup button {
     width: 100%;
-    margin-top: 9px;
     padding: 12px;
+    margin-top: 8px;
     border-radius: 22px;
     border: none;
     font-family: Georgia, serif;
+    cursor: pointer;
 }
 
 .si {
@@ -351,10 +346,10 @@ h1 {
 
 .qr-box {
     display: none;
-    margin-top: 18px;
+    margin-top: 16px;
     padding: 16px;
-    background: rgba(255,255,255,0.5);
     border-radius: 18px;
+    background: rgba(255,255,255,0.55);
 }
 
 .qr-box img {
@@ -362,12 +357,26 @@ h1 {
     max-width: 80%;
 }
 
-.footer {
-    text-align: center;
-    font-size: 24px;
-    color: #ad4771;
-    font-style: italic;
-    margin: 24px 0 40px;
+@media (max-width: 420px) {
+    .mis-xv {
+        font-size: 44px;
+    }
+
+    .ashley {
+        font-size: 47px;
+    }
+
+    .parents {
+        font-size: 32px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quince-img {
+        width: 92%;
+    }
 }
 </style>
 </head>
@@ -375,95 +384,116 @@ h1 {
 <body>
 
 <div class="page">
+<div class="content">
 
-    <header class="header">
-        <div class="crown">👑</div>
-        <h1>MIS XV</h1>
-        <div class="name">Ashley Alessandra</div>
-        <p class="quote">Porque tu amor, mis oraciones y mi fe me han sostenido hasta aquí.</p>
-        <div class="verse">Salmo 139:13</div>
-    </header>
+<header class="header">
+    <div class="crown">👑</div>
+    <h1 class="mis-xv">MIS XV</h1>
+    <div class="ashley">Ashley Alessandra</div>
 
-    <div class="girl">
-        <div class="hair"></div>
-        <div class="head"></div>
-        <div class="flowers">🌸🌸🌸</div>
-        <div class="body"></div>
-        <div class="skirt"></div>
-        <div class="bow">🎀</div>
+    <p class="text-small">
+        Hoy comienza una nueva etapa en mi vida,<br>
+        llena de sueños e ilusiones.
+    </p>
+
+    <p class="text-small">
+        Con la bendición de Dios,<br>
+        celebro este momento tan especial.
+    </p>
+</header>
+
+<div class="parents">
+    Jose Geovanny<br>
+    &<br>
+    Cinzia
+</div>
+
+<div class="invite-text">
+    nos complace invitarte a los<br>
+    <span class="xv-word">XV</span><br>
+    de nuestra querida hija
+</div>
+
+<div class="ashley">Ashley Alessandra</div>
+
+<img src="quinceanera.png" class="quince-img" alt="Quinceañera con vestido rosa">
+
+<section class="card">
+    <div class="card-title">FALTAN</div>
+    <div class="countdown">
+        <div class="time-box"><span id="dias">00</span><small>DÍAS</small></div>
+        <div class="time-box"><span id="horas">00</span><small>HORAS</small></div>
+        <div class="time-box"><span id="minutos">00</span><small>MIN</small></div>
+        <div class="time-box"><span id="segundos">00</span><small>SEG</small></div>
+    </div>
+</section>
+
+<section class="card event-grid">
+    <div class="date-box">
+        <div>SÁBADO</div>
+        <div class="day">11</div>
+        <div class="month">Julio</div>
+        <div>2026</div>
     </div>
 
-    <section class="section">
-        <div class="section-title">FALTAN</div>
-        <div class="countdown">
-            <div class="time-box"><span id="dias">00</span><small>DÍAS</small></div>
-            <div class="time-box"><span id="horas">00</span><small>HORAS</small></div>
-            <div class="time-box"><span id="minutos">00</span><small>MIN</small></div>
-            <div class="time-box"><span id="segundos">00</span><small>SEG</small></div>
-        </div>
-    </section>
+    <div class="info">
+        <div class="icon">📍</div>
+        <strong>RECEPCIÓN</strong><br>
+        Cristal House<br>
+        Cra 12 #10-59, Jamundí<br><br>
 
-    <section class="section date-box">
-        <div class="big-date">
-            <div>SÁBADO</div>
-            <div class="day">11</div>
-            <div class="month">Julio</div>
-            <div>2026</div>
-        </div>
+        <div class="icon">⏰</div>
+        <strong>HORA</strong><br>
+        8:00 p.m.
+    </div>
+</section>
 
-        <div class="info">
-            <strong>📍 RECEPCIÓN</strong><br>
-            Cristal House<br>
-            Cra 12 #10-59, Jamundí<br><br>
+<section class="card">
+    <div class="card-title">UBICACIÓN</div>
+    <p>Salón de Eventos Cristal House</p>
+    <a class="btn" target="_blank" href="https://www.google.com/maps/place/Salon+De+Eventos+Cristal+House/@3.2627598,-76.5443054,17z/data=!3m1!4b1!4m6!3m5!1s0x8e309eb6b83aa355:0xa90e75752b8b81eb!8m2!3d3.2627598!4d-76.5417305!16s%2Fg%2F11gbnt1l58?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">
+        📍 VER EN EL MAPA
+    </a>
+</section>
 
-            <strong>⏰ HORA</strong><br>
-            8:00 p.m.
-        </div>
-    </section>
+<section class="card notice">
+    💗 Se reserva el color ROSADO para la quinceañera 💗
+</section>
 
-    <section class="section">
-        <div class="section-title">UBICACIÓN</div>
-        <p>Salón de Eventos Cristal House</p>
-        <a class="btn" href="https://www.google.com/maps/place/Salon+De+Eventos+Cristal+House/@3.2627598,-76.5443054,17z/data=!3m1!4b1!4m6!3m5!1s0x8e309eb6b83aa355:0xa90e75752b8b81eb!8m2!3d3.2627598!4d-76.5417305!16s%2Fg%2F11gbnt1l58?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-            📍 VER EN EL MAPA
-        </a>
-    </section>
-
-    <section class="section notice">
-        Se reserva el color ROSADO para la quinceañera
-    </section>
-
-    <div class="player">
-        <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
-
-        <div class="controls">
-            <button>♥</button>
-            <button>⏮</button>
-            <button class="play-btn" onclick="toggleMusic()" id="playBtn">▶</button>
-            <button>⏭</button>
-            <button>＋</button>
-        </div>
-
-        <div class="player-text">Reproduce nuestra canción especial ♥</div>
+<div class="player">
+    <div class="progress">
+        <div class="progress-fill" id="progressFill"></div>
     </div>
 
-    <section class="section">
-        <div class="section-title">CONFIRMA TU ASISTENCIA</div>
-        <button class="btn" onclick="abrirPopup()">💌 CONFIRMAR AQUÍ</button>
+    <div class="controls">
+        <button>♥</button>
+        <button>⏮</button>
+        <button class="play-btn" id="playBtn" onclick="toggleMusic()">▶</button>
+        <button>⏭</button>
+        <button>＋</button>
+    </div>
 
-        <div class="qr-box" id="qrBox">
-            <p>Gracias por confirmar 💖<br>Comparte tus fotos y vídeos aquí:</p>
-            <img src="qr.png" alt="QR para subir fotos y vídeos">
-        </div>
-    </section>
+    <div class="player-text">Dale play y disfruta nuestra canción ♥</div>
+</div>
 
-    <section class="section">
-        <div class="section-title">LLUVIA DE SOBRES</div>
-        <p>Tu presencia será el mejor regalo, pero si deseas tener un detalle, tendremos lluvia de sobres.</p>
-    </section>
+<section class="card">
+    <div class="card-title">CONFIRMA TU ASISTENCIA</div>
+    <button class="btn" onclick="abrirPopup()">💌 CONFIRMAR AQUÍ</button>
 
-    <div class="footer">¡Te esperamos! ♥</div>
+    <div class="qr-box" id="qrBox">
+        <p>Gracias por confirmar 💖<br>Comparte tus fotos y vídeos aquí:</p>
+        <img src="qr.png" alt="QR para fotos y vídeos">
+    </div>
+</section>
 
+<section class="card">
+    <div class="card-title">LLUVIA DE SOBRES</div>
+    <img src="lluvia-sobres.png" class="envelope-img" alt="Lluvia de sobres">
+</section>
+
+<div class="footer">¡Te esperamos!</div>
+
+</div>
 </div>
 
 <audio id="musica" loop>
@@ -475,7 +505,6 @@ h1 {
         <h2>Confirmar asistencia</h2>
 
         <input type="text" id="nombre" placeholder="Tu nombre completo">
-
         <textarea id="mensaje" rows="3" placeholder="Mensaje opcional"></textarea>
 
         <button class="si" onclick="confirmar('si')">Sí asistiré 💖</button>
@@ -543,8 +572,7 @@ function toggleMusic() {
 
 audio.addEventListener("timeupdate", () => {
     if (audio.duration) {
-        const porcentaje = (audio.currentTime / audio.duration) * 100;
-        progressFill.style.width = porcentaje + "%";
+        progressFill.style.width = ((audio.currentTime / audio.duration) * 100) + "%";
     }
 });
 
