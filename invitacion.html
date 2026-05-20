@@ -6,12 +6,14 @@
 <title>Invitación Ashley XV</title>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
 * { box-sizing: border-box; }
 
 body {
     margin: 0;
     background: #f6dce8;
-    font-family: "Palatino Linotype", Georgia, serif;
+    font-family: 'Cinzel', serif;
     color: #5b3d3d;
 }
 
@@ -20,8 +22,8 @@ body {
     max-width: 520px;
     margin: auto;
     min-height: 100vh;
-    padding: 45px 26px 50px;
-    background-image: url("fondo-xv.png");
+    padding: 28px 24px 38px;
+    background-image: url("fondo.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -30,131 +32,137 @@ body {
 
 .logo-img {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .corona {
-    width: 170px;
-    margin-bottom: 24px;
+    width: 145px;
+    margin-bottom: 16px;
 }
 
 .text-small {
-    font-size: 16px;
-    line-height: 1.55;
-    margin: 14px auto;
-    max-width: 380px;
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 10px auto;
+    max-width: 360px;
+    font-weight: 500;
 }
 
 .jose {
-    width: 82%;
-    max-width: 360px;
-    margin: 24px auto 12px;
+    width: 74%;
+    max-width: 320px;
+    margin: 18px auto 8px;
 }
 
 .invite-text {
-    font-size: 17px;
-    line-height: 1.6;
-    margin: 12px auto;
+    font-size: 14px;
+    line-height: 1.45;
+    margin: 8px auto;
 }
 
 .xv {
-    width: 38%;
-    max-width: 170px;
-    margin: 12px auto;
+    width: 30%;
+    max-width: 130px;
+    margin: 6px auto;
 }
 
 .ashley {
-    width: 96%;
-    max-width: 430px;
-    margin: 14px auto 20px;
+    width: 92%;
+    max-width: 400px;
+    margin: 8px auto 12px;
 }
 
 .quince-img {
-    width: 92%;
-    max-width: 390px;
-    margin: 18px auto 10px;
+    width: 88%;
+    max-width: 360px;
+    margin: 10px auto 8px;
     display: block;
-    filter: drop-shadow(0 12px 16px rgba(136,73,95,0.28));
+    filter: drop-shadow(0 10px 14px rgba(136,73,95,0.25));
 }
 
 .card {
-    background: rgba(255,255,255,0.62);
-    border: 1.5px solid #d8a24a;
-    border-radius: 22px;
-    padding: 18px;
-    margin: 24px 0;
-    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.58);
+    border: 1.3px solid #d8a24a;
+    border-radius: 20px;
+    padding: 14px;
+    margin: 16px 0;
+    backdrop-filter: blur(4px);
 }
 
 .card-title {
     color: #b44773;
     letter-spacing: 4px;
-    font-size: 20px;
-    margin-bottom: 14px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .countdown {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 7px;
 }
 
 .time-box {
-    border: 1.3px solid #d8a24a;
-    border-radius: 14px;
-    padding: 10px 3px;
+    border: 1.2px solid #d8a24a;
+    border-radius: 12px;
+    padding: 8px 2px;
     background: rgba(255,255,255,0.58);
 }
 
 .time-box span {
     display: block;
     color: #b44773;
-    font-size: 27px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .time-box small {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .fecha {
-    width: 100%;
-    max-width: 430px;
-    margin: 4px auto 12px;
+    width: 92%;
+    max-width: 390px;
+    margin: 0 auto 12px;
 }
 
 .info {
-    font-size: 17px;
-    line-height: 1.55;
+    font-size: 14px;
+    line-height: 1.45;
 }
 
 .btn {
     display: inline-block;
-    padding: 13px 28px;
-    margin-top: 14px;
+    padding: 11px 24px;
+    margin-top: 10px;
     background: #b44773;
     color: white;
     border: 2px solid #d8a24a;
-    border-radius: 30px;
+    border-radius: 28px;
     text-decoration: none;
     letter-spacing: 1px;
-    font-family: Georgia, serif;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .notice {
-    font-weight: bold;
+    font-weight: 600;
     color: #a33d68;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.45;
+    padding: 12px;
 }
 
 .player {
-    padding: 18px;
-    border-radius: 22px;
-    background: rgba(255,255,255,0.62);
-    border: 1.5px solid #d8a24a;
-    margin: 26px 0;
+    padding: 14px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.6);
+    border: 1.3px solid #d8a24a;
+    margin: 16px 0;
 }
 
 .progress {
@@ -162,7 +170,7 @@ body {
     background: #e7a2bd;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .progress-fill {
@@ -181,41 +189,40 @@ body {
     border: none;
     background: transparent;
     color: #b44773;
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
 }
 
 .play-btn {
-    width: 62px;
-    height: 62px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background: #b44773 !important;
     color: white !important;
     border: 2px solid #d8a24a !important;
-    font-size: 27px !important;
+    font-size: 25px !important;
 }
 
 .player-text {
-    margin-top: 12px;
+    margin-top: 10px;
     color: #b44773;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .envelope-img {
-    width: 76%;
-    max-width: 310px;
+    width: 68%;
+    max-width: 270px;
     display: block;
-    margin: 14px auto 8px;
+    margin: 10px auto 4px;
 }
 
 .footer {
     color: #b44773;
-    font-size: 32px;
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-    margin: 28px 0 8px;
+    font-size: 26px;
+    margin: 20px 0 4px;
+    font-weight: 500;
 }
 
-/* POPUP */
 .popup-bg {
     position: fixed;
     inset: 0;
@@ -249,7 +256,7 @@ body {
     border: 1px solid #d8a24a;
     border-radius: 14px;
     margin: 8px 0;
-    font-family: Georgia, serif;
+    font-family: 'Cinzel', serif;
 }
 
 .popup button {
@@ -258,17 +265,13 @@ body {
     margin-top: 8px;
     border-radius: 22px;
     border: none;
-    font-family: Georgia, serif;
+    font-family: 'Cinzel', serif;
     cursor: pointer;
 }
 
 .si { background: #b44773; color: white; }
 .no { background: #9b8b8b; color: white; }
 .cerrar { background: transparent; color: #8b4d61; }
-
-.qr-popup {
-    display: none;
-}
 
 .qr-popup img {
     width: 170px;
@@ -277,11 +280,11 @@ body {
 }
 
 @media (max-width: 420px) {
-    .page { padding: 38px 20px 44px; }
-    .corona { width: 145px; }
-    .jose { width: 92%; }
+    .page { padding: 24px 18px 34px; }
+    .corona { width: 125px; }
+    .jose { width: 82%; }
     .ashley { width: 100%; }
-    .xv { width: 42%; }
+    .xv { width: 36%; }
 }
 </style>
 </head>
@@ -304,15 +307,11 @@ body {
 
     <img src="jose.png" class="logo-img jose" alt="Jose Geovanny y Cinzia">
 
-    <div class="invite-text">
-        nos complace invitarte a los
-    </div>
+    <div class="invite-text">nos complace invitarte a los</div>
 
     <img src="xv.png" class="logo-img xv" alt="XV">
 
-    <div class="invite-text">
-        de nuestra querida hija
-    </div>
+    <div class="invite-text">de nuestra querida hija</div>
 
     <img src="ashley_alessandra.png" class="logo-img ashley" alt="Ashley Alessandra">
 
@@ -334,7 +333,9 @@ body {
         <div class="info">
             <strong>📍 RECEPCIÓN</strong><br>
             Salón de Eventos Cristal House<br>
-            Cra 12 #10-59, Jamundí<br><br>
+            Cra 12 #10-59, Jamundí
+
+            <br>
 
             <a class="btn" target="_blank" href="https://www.google.com/maps/place/Salon+De+Eventos+Cristal+House/@3.2627598,-76.5443054,17z/data=!3m1!4b1!4m6!3m5!1s0x8e309eb6b83aa355:0xa90e75752b8b81eb!8m2!3d3.2627598!4d-76.5417305!16s%2Fg%2F11gbnt1l58?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">
                 📍 VER UBICACIÓN
@@ -380,7 +381,6 @@ body {
     <source src="musica.mp3" type="audio/mpeg">
 </audio>
 
-<!-- POPUP CONFIRMAR -->
 <div class="popup-bg" id="popup">
     <div class="popup">
         <h2>Confirmar asistencia</h2>
@@ -394,16 +394,11 @@ body {
     </div>
 </div>
 
-<!-- POPUP QR SOLO SI CONFIRMAN SÍ -->
 <div class="popup-bg" id="popupQR">
     <div class="popup qr-popup">
         <h2>¡Gracias por confirmar! 💖</h2>
-        <p>
-            Te esperamos con mucha ilusión en los XV de Ashley Alessandra.
-        </p>
-        <p>
-            Este código QR es para que el día del evento puedas subir las fotos y vídeos que hagas durante la celebración.
-        </p>
+        <p>Te esperamos con mucha ilusión en los XV de Ashley Alessandra.</p>
+        <p>Este QR es para subir las fotos y vídeos que hagas durante la celebración.</p>
 
         <img src="qr.png" alt="QR para subir fotos y vídeos">
 
@@ -419,17 +414,17 @@ function actualizarContador() {
     const diferencia = fechaEvento - ahora;
 
     if (diferencia <= 0) {
-        document.getElementById("dias").innerText = "00";
-        document.getElementById("horas").innerText = "00";
-        document.getElementById("minutos").innerText = "00";
-        document.getElementById("segundos").innerText = "00";
+        dias.innerText = "00";
+        horas.innerText = "00";
+        minutos.innerText = "00";
+        segundos.innerText = "00";
         return;
     }
 
-    document.getElementById("dias").innerText = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-    document.getElementById("horas").innerText = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
-    document.getElementById("minutos").innerText = Math.floor((diferencia / (1000 * 60)) % 60);
-    document.getElementById("segundos").innerText = Math.floor((diferencia / 1000) % 60);
+    dias.innerText = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    horas.innerText = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    minutos.innerText = Math.floor((diferencia / (1000 * 60)) % 60);
+    segundos.innerText = Math.floor((diferencia / 1000) % 60);
 }
 
 actualizarContador();
@@ -492,7 +487,6 @@ function cerrarPopupQR() {
 
 function confirmar(respuesta) {
     const nombre = document.getElementById("nombre").value.trim();
-    const mensaje = document.getElementById("mensaje").value.trim();
 
     if (!nombre) {
         alert("Por favor escribe tu nombre completo");
@@ -506,13 +500,6 @@ function confirmar(respuesta) {
     } else {
         alert("Gracias por responder, " + nombre + " 💌");
     }
-
-    console.log({
-        nombre: nombre,
-        respuesta: respuesta,
-        mensaje: mensaje,
-        fecha: new Date().toISOString()
-    });
 }
 </script>
 
