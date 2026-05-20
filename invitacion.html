@@ -13,7 +13,7 @@
 body {
     margin: 0;
     background: #f6dce8;
-    font-family: Georgia, serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: #5b3d3d;
 }
 
@@ -22,113 +22,97 @@ body {
     max-width: 520px;
     margin: auto;
     min-height: 100vh;
-    padding: 34px 20px 46px;
+    padding: 60px 28px 50px;
     position: relative;
     overflow: hidden;
-    background:
-        radial-gradient(circle at top center, rgba(255,255,255,0.9), transparent 30%),
-        linear-gradient(180deg, rgba(255,225,238,0.95), rgba(255,198,221,0.9)),
-        url("fondo-rosa.png");
+    background-image: url("fondo-xv.png");
     background-size: cover;
-    background-position: top center;
+    background-position: center top;
+    background-repeat: no-repeat;
     border-left: 6px solid #f2abc8;
     border-right: 6px solid #f2abc8;
-}
-
-.page::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 10% 10%, rgba(255,255,255,0.5), transparent 12%),
-        radial-gradient(circle at 90% 15%, rgba(255,255,255,0.35), transparent 15%),
-        radial-gradient(circle at 50% 60%, rgba(255,255,255,0.35), transparent 22%);
-    pointer-events: none;
 }
 
 .content {
     position: relative;
     z-index: 2;
-}
-
-.header {
     text-align: center;
-    padding-top: 10px;
 }
 
 .crown {
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
 .mis-xv {
-    font-size: 52px;
+    font-size: 64px;
     letter-spacing: 8px;
     color: #9b5f5a;
-    margin: 0;
+    margin: 0 0 12px;
     font-weight: bold;
 }
 
 .ashley {
-    font-size: 58px;
-    line-height: 0.95;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 62px;
+    line-height: 1;
     color: #8b5a52;
-    font-style: italic;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
     font-weight: normal;
-    margin: 14px 0 18px;
+    margin: 18px auto;
 }
 
 .text-small {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.55;
-    text-align: center;
-    max-width: 370px;
-    margin: 0 auto 14px;
+    max-width: 380px;
+    margin: 14px auto;
 }
 
 .parents {
-    font-size: 38px;
-    line-height: 1.15;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 34px;
+    line-height: 1.1;
     color: #8b5a52;
-    font-style: italic;
-    text-align: center;
-    margin: 20px 0 10px;
+    margin: 28px 0 12px;
 }
 
 .invite-text {
-    text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.6;
-    margin: 12px auto;
+    margin: 14px auto;
 }
 
 .xv-word {
-    font-size: 44px;
-    font-style: italic;
-    color: #8b5a52;
+    font-size: 76px;
+    color: #b44773;
+    font-weight: bold;
+    display: block;
+    margin: 8px 0;
 }
 
 .quince-img {
-    width: 78%;
-    max-width: 360px;
+    width: 90%;
+    max-width: 370px;
     display: block;
-    margin: 20px auto 10px;
-    filter: drop-shadow(0 12px 14px rgba(136, 73, 95, 0.25));
+    margin: 26px auto 12px;
+    filter: drop-shadow(0 12px 16px rgba(136,73,95,0.28));
 }
 
 .card {
-    background: rgba(255,255,255,0.55);
+    background: rgba(255,255,255,0.58);
     border: 1.5px solid #d8a24a;
     border-radius: 22px;
     padding: 18px;
-    margin: 24px 0;
-    text-align: center;
+    margin: 26px 0;
     backdrop-filter: blur(5px);
 }
 
 .card-title {
     color: #b44773;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 20px;
     margin-bottom: 14px;
 }
@@ -143,13 +127,13 @@ body {
     border: 1.3px solid #d8a24a;
     border-radius: 14px;
     padding: 10px 3px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.55);
 }
 
 .time-box span {
     display: block;
     color: #b44773;
-    font-size: 29px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -158,17 +142,12 @@ body {
     letter-spacing: 1px;
 }
 
-.event-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    align-items: center;
-}
-
 .date-box {
     border: 1.5px solid #d8a24a;
     border-radius: 18px;
-    padding: 14px 8px;
+    padding: 16px 8px;
+    margin-bottom: 16px;
+    background: rgba(255,255,255,0.45);
 }
 
 .date-box .day {
@@ -179,23 +158,17 @@ body {
 .date-box .month {
     font-size: 34px;
     color: #b44773;
-    font-style: italic;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
 }
 
 .info {
-    text-align: left;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.icon {
-    font-size: 28px;
-    color: #b44773;
+    font-size: 17px;
+    line-height: 1.55;
 }
 
 .btn {
     display: inline-block;
-    padding: 13px 26px;
+    padding: 13px 28px;
     margin-top: 12px;
     background: #b44773;
     color: white;
@@ -219,8 +192,7 @@ body {
     border-radius: 22px;
     background: rgba(255,255,255,0.62);
     border: 1.5px solid #d8a24a;
-    text-align: center;
-    margin: 24px 0;
+    margin: 26px 0;
 }
 
 .progress {
@@ -268,7 +240,7 @@ body {
 }
 
 .envelope-img {
-    width: 72%;
+    width: 75%;
     max-width: 300px;
     display: block;
     margin: 12px auto 8px;
@@ -276,11 +248,10 @@ body {
 }
 
 .footer {
-    text-align: center;
     color: #b44773;
-    font-size: 31px;
-    font-style: italic;
-    margin: 28px 0 8px;
+    font-size: 34px;
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    margin: 30px 0 8px;
 }
 
 .popup-bg {
@@ -358,24 +329,28 @@ body {
 }
 
 @media (max-width: 420px) {
+    .page {
+        padding: 48px 20px 44px;
+    }
+
     .mis-xv {
-        font-size: 44px;
+        font-size: 52px;
     }
 
     .ashley {
-        font-size: 47px;
+        font-size: 50px;
     }
 
     .parents {
-        font-size: 32px;
+        font-size: 30px;
     }
 
-    .event-grid {
-        grid-template-columns: 1fr;
+    .xv-word {
+        font-size: 64px;
     }
 
     .quince-img {
-        width: 92%;
+        width: 96%;
     }
 }
 </style>
@@ -386,9 +361,10 @@ body {
 <div class="page">
 <div class="content">
 
-<header class="header">
     <div class="crown">👑</div>
+
     <h1 class="mis-xv">MIS XV</h1>
+
     <div class="ashley">Ashley Alessandra</div>
 
     <p class="text-small">
@@ -400,98 +376,95 @@ body {
         Con la bendición de Dios,<br>
         celebro este momento tan especial.
     </p>
-</header>
 
-<div class="parents">
-    Jose Geovanny<br>
-    &<br>
-    Cinzia
-</div>
-
-<div class="invite-text">
-    nos complace invitarte a los<br>
-    <span class="xv-word">XV</span><br>
-    de nuestra querida hija
-</div>
-
-<div class="ashley">Ashley Alessandra</div>
-
-<img src="quinceanera.png" class="quince-img" alt="Quinceañera con vestido rosa">
-
-<section class="card">
-    <div class="card-title">FALTAN</div>
-    <div class="countdown">
-        <div class="time-box"><span id="dias">00</span><small>DÍAS</small></div>
-        <div class="time-box"><span id="horas">00</span><small>HORAS</small></div>
-        <div class="time-box"><span id="minutos">00</span><small>MIN</small></div>
-        <div class="time-box"><span id="segundos">00</span><small>SEG</small></div>
-    </div>
-</section>
-
-<section class="card event-grid">
-    <div class="date-box">
-        <div>SÁBADO</div>
-        <div class="day">11</div>
-        <div class="month">Julio</div>
-        <div>2026</div>
+    <div class="parents">
+        Jose Geovanny<br>
+        &<br>
+        Cinzia
     </div>
 
-    <div class="info">
-        <div class="icon">📍</div>
-        <strong>RECEPCIÓN</strong><br>
-        Cristal House<br>
-        Cra 12 #10-59, Jamundí<br><br>
-
-        <div class="icon">⏰</div>
-        <strong>HORA</strong><br>
-        8:00 p.m.
-    </div>
-</section>
-
-<section class="card">
-    <div class="card-title">UBICACIÓN</div>
-    <p>Salón de Eventos Cristal House</p>
-    <a class="btn" target="_blank" href="https://www.google.com/maps/place/Salon+De+Eventos+Cristal+House/@3.2627598,-76.5443054,17z/data=!3m1!4b1!4m6!3m5!1s0x8e309eb6b83aa355:0xa90e75752b8b81eb!8m2!3d3.2627598!4d-76.5417305!16s%2Fg%2F11gbnt1l58?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">
-        📍 VER EN EL MAPA
-    </a>
-</section>
-
-<section class="card notice">
-    💗 Se reserva el color ROSADO para la quinceañera 💗
-</section>
-
-<div class="player">
-    <div class="progress">
-        <div class="progress-fill" id="progressFill"></div>
+    <div class="invite-text">
+        nos complace invitarte a los
+        <span class="xv-word">XV</span>
+        de nuestra querida hija
     </div>
 
-    <div class="controls">
-        <button>♥</button>
-        <button>⏮</button>
-        <button class="play-btn" id="playBtn" onclick="toggleMusic()">▶</button>
-        <button>⏭</button>
-        <button>＋</button>
+    <div class="ashley">Ashley Alessandra</div>
+
+    <img src="quinceanera.png" class="quince-img" alt="Quinceañera con vestido rosa">
+
+    <section class="card">
+        <div class="card-title">FALTAN</div>
+        <div class="countdown">
+            <div class="time-box"><span id="dias">00</span><small>DÍAS</small></div>
+            <div class="time-box"><span id="horas">00</span><small>HORAS</small></div>
+            <div class="time-box"><span id="minutos">00</span><small>MIN</small></div>
+            <div class="time-box"><span id="segundos">00</span><small>SEG</small></div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="date-box">
+            <div>SÁBADO</div>
+            <div class="day">11</div>
+            <div class="month">Julio</div>
+            <div>2026</div>
+        </div>
+
+        <div class="info">
+            <strong>📍 RECEPCIÓN</strong><br>
+            Cristal House<br>
+            Cra 12 #10-59, Jamundí<br><br>
+
+            <strong>⏰ HORA</strong><br>
+            8:00 p.m.
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card-title">UBICACIÓN</div>
+        <p>Salón de Eventos Cristal House</p>
+        <a class="btn" target="_blank" href="https://www.google.com/maps/place/Salon+De+Eventos+Cristal+House/@3.2627598,-76.5443054,17z/data=!3m1!4b1!4m6!3m5!1s0x8e309eb6b83aa355:0xa90e75752b8b81eb!8m2!3d3.2627598!4d-76.5417305!16s%2Fg%2F11gbnt1l58?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">
+            📍 VER UBICACIÓN
+        </a>
+    </section>
+
+    <section class="card notice">
+        💗 Se reserva el color ROSADO para la quinceañera 💗
+    </section>
+
+    <div class="player">
+        <div class="progress">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="controls">
+            <button>♥</button>
+            <button>⏮</button>
+            <button class="play-btn" id="playBtn" onclick="toggleMusic()">▶</button>
+            <button>⏭</button>
+            <button>＋</button>
+        </div>
+
+        <div class="player-text">Dale play y disfruta nuestra canción ♥</div>
     </div>
 
-    <div class="player-text">Dale play y disfruta nuestra canción ♥</div>
-</div>
+    <section class="card">
+        <div class="card-title">CONFIRMA TU ASISTENCIA</div>
+        <button class="btn" onclick="abrirPopup()">💌 CONFIRMAR AQUÍ</button>
 
-<section class="card">
-    <div class="card-title">CONFIRMA TU ASISTENCIA</div>
-    <button class="btn" onclick="abrirPopup()">💌 CONFIRMAR AQUÍ</button>
+        <div class="qr-box" id="qrBox">
+            <p>Gracias por confirmar 💖<br>Comparte tus fotos y vídeos aquí:</p>
+            <img src="qr.png" alt="QR para fotos y vídeos">
+        </div>
+    </section>
 
-    <div class="qr-box" id="qrBox">
-        <p>Gracias por confirmar 💖<br>Comparte tus fotos y vídeos aquí:</p>
-        <img src="qr.png" alt="QR para fotos y vídeos">
-    </div>
-</section>
+    <section class="card">
+        <div class="card-title">LLUVIA DE SOBRES</div>
+        <img src="lluvia-sobres.png" class="envelope-img" alt="Lluvia de sobres">
+    </section>
 
-<section class="card">
-    <div class="card-title">LLUVIA DE SOBRES</div>
-    <img src="lluvia-sobres.png" class="envelope-img" alt="Lluvia de sobres">
-</section>
-
-<div class="footer">¡Te esperamos!</div>
+    <div class="footer">¡Te esperamos!</div>
 
 </div>
 </div>
